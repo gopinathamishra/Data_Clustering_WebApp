@@ -1,0 +1,13 @@
+﻿
+<div ng-controller="viewAllTweets">
+
+    <div class="row">
+
+        <div class="col-md-6">Tweet Reference Number</div>
+        <div class="col-md-6">Tweet</div>
+    <div ng-repeat="tweet in allTweets" >
+        <div class="col-md-6">{{tweet.tweetReferenceNumber}}</div>
+        <div class="col-md-6">{{tweet.tweetContent}}</div>
+    </div>
+   </div>
+</div>
