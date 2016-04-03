@@ -1,13 +1,25 @@
 ﻿
 <div ng-controller="viewAllTweets">
+    
+    <table st-table="searchCollection" st-safe-src="allTweets" class="table table-striped">
+        <thead>
+            <tr>
+                <th> Tweet Reference Number</th>
+                <th> Tweet Content</th>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <input st-search="" class="form-control" placeholder="Global Search" type="text"/>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr  ng-repeat="tweet in searchCollection">
+                <td>{{tweet.tweetID}}</td>
+                <td>{{tweet.tweetContent}}</td>
+            </tr>
+        </tbody>
 
-    <div class="row">
-
-        <div class="col-md-6">Tweet Reference Number</div>
-        <div class="col-md-6">Tweet</div>
-    <div ng-repeat="tweet in allTweets" >
-        <div class="col-md-6">{{tweet.tweetReferenceNumber}}</div>
-        <div class="col-md-6">{{tweet.tweetContent}}</div>
-    </div>
-   </div>
+    </table>
 </div>
+

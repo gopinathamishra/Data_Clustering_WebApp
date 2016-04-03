@@ -25,10 +25,12 @@ namespace DataClusteringWebApp
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.css",
+                      "~/Content/ng-table.css"));
 
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
                     "~/Scripts/angular.js",
+                    "~/Scripts/smart-table.js",
                     "~/angularApp/dataClusteringApp.js"
                 ));
         }
