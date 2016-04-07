@@ -160,9 +160,11 @@
     <Compile Include="DataAccessLayer\DatabaseInitializer.cs" />
     <Compile Include="DataAccessLayer\DataClusteringContext.cs" />
     <Compile Include="DataAccessLayer\JsonModel.cs" />
+    <Compile Include="DataAccessLayer\TweetsClusteringResult.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="LogicClasses\ClusteringLogic.cs" />
     <Compile Include="Models\Tweet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -219,6 +221,7 @@
     <Content Include="Views\Home\DisplayAllTweets.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\ng-table.min.js.map" />
+    <Content Include="Views\Home\TweetClusters.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

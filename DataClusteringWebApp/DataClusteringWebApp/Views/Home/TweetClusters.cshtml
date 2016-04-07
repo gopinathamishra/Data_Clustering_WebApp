@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "TweetClusters";
+}
+
+<h2>TweetClusters</h2>
+
+<div ng-controller="getTweetClusters">
+    <table st-table="searchCollection" st-safe-src="tweetClusteringData" class="table table-striped">
+        <thead>
+            <tr>
+                <th>Tweet Id</th>
+                <th>Tweet Content</th>
+                <th>Cluster Id</th>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <input st-search="" class="form-control" type="text" placeholder="Global Search" />
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="clusterObject in searchCollection">
+                <td>{{clusterObject.TokenizedTweetsID}}</td>
+                <td>{{clusterObject.TokenizedContent}}</td>
+                <td>{{clusterObject.TweetClusterID}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
